@@ -1,1 +1,33 @@
+<body>
+
+    <!-- Nav Section -->
+     <nav>  
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/img/SG-Logo.png" alt="">
+            </div>    
+
+            <ul class="menu">
+                <li><a href="#">สมัครสินเชื่อ</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+     <!-- Nav Section -->
+
+
+     <!--Banner section -->
+    <section class="banner">
+        <div class="banner-info">
+            <img src="assets/img/FN_PL.png" alt="">
+            <!-- <h1>The Best Website</h1>
+            <p>ข้อมุลเพิ่มเติมเชียนเอาอะไร </p> -->
+        </div>
+    </section>
+     <!--Banner section -->
+
+
+</body>
+   
 
