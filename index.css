@@ -1,0 +1,118 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    /* display: flex;    */
+    /* border: 1px solid red; */
+
+     /* ซ้ายสุด-ขวาสุด ช่องว่างกลางเท่าๆกัน  ซ้าย-ขวา*/
+    /* justify-content: space-between;  */
+
+    align-items: center;    /* จัดตำแหน่ง “แนวตั้ง”   บน-ล่าง */
+    padding: 5px 20px;  /* ขยายกรอบ */
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #e5e5e5;    /* เส้นขอบ  */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+}
+
+.nav-container {
+    /* max-width: 1200px;   */
+    margin: auto;      /* ทำให้กลางจอ */
+  
+    
+    display: flex;
+    align-items: center;
+
+    /* padding: 10px 40px; */
+    padding: 0px 0px 0px 60px;
+    /* border: 1px solid red; */
+}
+
+
+
+.logo img {
+    width: 50px; 
+    border-radius:  10px;
+     /* margin-left: 60px;  */
+
+}
+
+.menu{
+    display: flex;
+    list-style: none; /* ลบสัญลักษณ์หน้ารายการ */
+    gap: 30px;
+}
+
+.menu li {
+    margin-left: 50px;
+}
+
+.menu li a {
+    text-decoration: none; /* ลบเส้นตกแต่งข้อความ เช่น เส้นใต้ */
+    color: #333;
+    transition: 0.3s; 
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: #00A651; /* สีเขียว S11 */
+}
+
+.banner {
+    color: #fff;
+    width: 100vw;                 /* เต็มจอจริง */
+    margin-left: calc(50% - 50vw); /* ดันให้ชนซ้าย */
+}
+
+.banner-info{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.banner-info img {
+    width: 100%;   /* ให้รูปกว้างเท่า parent*/
+    display: block;  /* ⭐ กันช่องว่างใต้รูป */
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .nav-container  {
+        flex-direction: column;
+        justify-content: center;   /* ⭐ เพิ่ม */
+        align-items: center;
+        text-align: center;        /* ⭐ เพิ่ม */
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;   /* ⭐ เพิ่ม */
+        width: 100%;
+    }
+
+    .logo img {
+        width: 40px; /* รูปเล็กลง */
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;   /* ⭐ เพิ่ม */
+        align-items: center;
+        gap: 12px;
+        margin-top: 15px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 0; /* ลบ margin ซ้ายเดิม */
+    }
+
+}
